@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="340">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Radar Sweep Gradient -->
+    <radialGradient id="radarSweep" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#6366f1" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glowing Line Gradients -->
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+    </pattern>
+
+    <!-- Pulse Animation -->
+    <style>
+      .radar-sweep {
+        transform-origin: 1040px 170px;
+        animation: rotateSweep 8s linear infinite;
+      }
+      .wave-pulse {
+        animation: pulseWave 4s ease-in-out infinite alternate;
+      }
+      .node-pulse {
+        animation: pulseNode 2.5s ease-in-out infinite alternate;
+      }
+      .chart-dash {
+        stroke-dasharray: 8, 4;
+        animation: dashMove 12s linear infinite;
+      }
+      @keyframes rotateSweep {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulseWave {
+        0% { opacity: 0.3; transform: scaleY(0.95); }
+        100% { opacity: 0.8; transform: scaleY(1.05); }
+      }
+      @keyframes pulseNode {
+        0% { r: 3.5px; opacity: 0.5; }
+        100% { r: 6.5px; opacity: 1; }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -120; }
+      }
+    </style>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="340" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Technical Grid Overlay (Background) -->
+  <rect width="1200" height="340" rx="16" fill="url(#grid)" />
+
+  <!-- DYNAMIC BACKGROUND ELEMENTS (Kept strictly on right and lower quadrants behind text) -->
+  <g opacity="0.65">
+    <!-- Animated Market Trend / Telemetry Graph Lines -->
+    <path class="chart-dash" d="M 680 260 Q 780 210, 860 230 T 980 140 T 1140 100" fill="none" stroke="url(#cyanLine)" stroke-width="2.5" />
+    <path d="M 640 280 Q 740 250, 840 270 T 960 190 T 1160 160" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.4" />
+    
+    <!-- Background Radar Circles at (1040, 170) -->
+    <circle cx="1040" cy="170" r="120" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.2" />
+    <circle cx="1040" cy="170" r="80" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4, 4" />
+    <circle cx="1040" cy="170" r="40" fill="none" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
+    
+    <!-- Dynamic Radar Sweep Fan -->
+    <g class="radar-sweep">
+      <path d="M 1040 170 L 1160 170 A 120 120 0 0 1 1125 255 Z" fill="url(#radarSweep)" />
+    </g>
+
+    <!-- Telemetry Data Nodes -->
+    <circle class="node-pulse" cx="860" cy="230" r="4.5" fill="#38bdf8" />
+    <circle class="node-pulse" cx="980" cy="140" r="5" fill="#818cf8" style="animation-delay: 0.8s;" />
+    <circle class="node-pulse" cx="1140" cy="100" r="5.5" fill="#34d399" style="animation-delay: 1.5s;" />
+    <circle cx="1040" cy="170" r="4" fill="#f43f5e" />
+  </g>
+
+  <!-- Bottom Accent Strip -->
+  <rect x="0" y="334" width="1200" height="6" fill="url(#accentGrad)" />
+
+  <!-- FOREGROUND BRANDING & TYPOGRAPHY (Prominently in foreground, high contrast, uncluttered) -->
+  <g transform="translate(60, 0)">
+    <!-- Pill Badge: Category Tag -->
+    <g transform="translate(0, 52)">
+      <rect width="265" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+      <circle cx="15" cy="15" r="4" fill="#38bdf8" />
+      <text x="28" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#bae6fd" letter-spacing="1">MARKET &amp; COMPETITIVE INTEL</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      Awesome Market Intelligence
+    </text>
+
+    <!-- Subtitle Line 1 -->
+    <text x="0" y="186" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#94a3b8">
+      Curated ecosystem of SaaS leaders, financial terminals, OSINT analyzers &amp; AI agents
+    </text>
+
+    <!-- Subtitle Line 2 / Feature Badges -->
+    <g transform="translate(0, 224)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="158" height="32" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" stroke-opacity="0.5" />
+      <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="500" fill="#c7d2fe">📊 Enterprise SaaS</text>
+
+      <!-- Pill 2 -->
+      <rect x="170" y="0" width="170" height="32" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1" stroke-opacity="0.5" />
+      <text x="184" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="500" fill="#a7f3d0">⚡ Open-Source OSINT</text>
+
+      <!-- Pill 3 -->
+      <rect x="352" y="0" width="180" height="32" rx="8" fill="#4c1d95" stroke="#a855f7" stroke-width="1" stroke-opacity="0.5" />
+      <text x="366" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="500" fill="#e9d5ff">🤖 AI Research Agents</text>
+    </g>
+  </g>
+</svg>
