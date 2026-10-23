@@ -1,157 +1,105 @@
-# Awesome-Market-Intelligence
+# Awesome Market Intelligence [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Market Intelligence Ecosystem
+> A curated list of market intelligence platforms, competitive research tools, OSINT workbenches, and open-source intelligence pipelines.
 
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Competitive Intelligence, Market Research & Self-Hosted Intelligence Pipelines*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Market Intelligence**. These tools help organizations understand their competitive landscape, track market shifts, and synthesize research from public and proprietary sources—ranging from financial terminals and expert networks to AI-powered competitive intelligence platforms and open-source OSINT workbenches.
-
-
-
-**Examples** include AlphaSense, Bloomberg Terminal, FactSet, Meltwater, Crayon, Klue, PitchBook, CB Insights, and Similarweb (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding five-figure annual contracts, and building custom intelligence pipelines. The open-source landscape is anchored by **last30days-skill** (multi-source research synthesis across Reddit, X, YouTube, and prediction markets), **OmniSight** (autonomous competitive intelligence with web scraping and audio transcription), and **Intelwatch** (terminal-based due diligence and OSINT), with **JingXi** and **InfoEdge** providing structured competitive analysis and trend discovery respectively.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-| Product | Description | Pricing | Free Tier Limit |
-
-| :--- | :--- | :--- | :--- |
-
-| **[AlphaSense](https://www.alpha-sense.com/)** | AI-powered market intelligence platform with search across broker research, expert transcripts, filings, and news. | Quote-based enterprise pricing; no public list prices. | No permanent free tier. **Trial available** via sales request. |
-
-| **[Bloomberg Terminal](https://www.bloomberg.com/professional/)** | The financial data standard with real-time market data, news, analytics, and the IB Chat network. | **~$24,000–$31,980/year per seat** (varies by contract and region) . | **No free tier**. Bloomberg offers a 30-day trial for qualified institutional prospects only. |
-
-| **[FactSet](https://www.factset.com/)** | Financial data and analytics platform with earnings call transcripts, estimates, and portfolio tools. | Quote-only; modular pricing based on data entitlements and seat count. | **No free tier**. Trial available via sales engagement. |
-
-| **[Meltwater](https://www.meltwater.com/)** | Media monitoring and social listening platform for brand and market intelligence. | Quote-based; pricing scales with mentions, seats, and modules. | **No free tier**. Demo available on request. |
-
-| **[Crayon](https://www.crayon.co/)** | Competitive intelligence platform with automated tracking, battlecards, and sales enablement. | Quote-only; annual contracts. Typical mid-market deployments ~**$30,000/year** based on transaction data . | **No free trial**. Evaluation requires enterprise sales process . |
-
-| **[Klue](https://klue.com/)** | Competitive intelligence and win-loss analysis platform for go-to-market teams. | Quote-only; annual contracts. Reported around **$40,000/year** for enterprise deployments . | **No free trial**. No self-serve signup . |
-
-| **[PitchBook](https://pitchbook.com/)** | Private markets data platform covering VC, PE, M&A, and company profiles. | Quote-only. Typical team licenses **$25,000–$40,000/year**; enterprise with API **$70,000+** . | **No free tier**. Demo required. |
-
-| **[CB Insights](https://www.cbinsights.com/)** | Tech market intelligence platform with predictive analytics, company data, and proprietary research. | Quote-only. Reported contracts **$40,000–$100,000/year** . | **10-day free trial** available for qualified prospects . |
-
-| **[Similarweb](https://www.similarweb.com/)** | Digital intelligence platform for traffic analysis, competitor benchmarking, and market sizing. | Quote-based. Entry-level **~$15,000–$40,000/year**; enterprise **$90,000–$200,000+** . | **Free account** available with limited data; paid tiers required for full intelligence. |
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[last30days-skill](https://github.com/mvanhorn/last30days-skill)** [![GitHub Stars](https://img.shields.io/github/stars/mvanhorn/last30days-skill?style=social&color=white)](https://github.com/mvanhorn/last30days-skill/stargazers)  
-
-  **The multi-source research synthesis standard.** Researches any topic across Reddit, X, YouTube, Hacker News, Polymarket, and the web from the last 30 days, then synthesizes a grounded narrative with real citations . **Sources**: Reddit (with comments), HN, Polymarket, GitHub work free with zero config; X, YouTube, TikTok, Instagram available via API keys . **Use cases**: pre-meeting research, hiring signals, tool comparisons, and community sentiment analysis . **Caveat**: designed for Claude Code/Codex skill environments; not a standalone web app. Best for analysts and researchers wanting fast, citation-backed intelligence on any topic without enterprise contracts.
-
-
-
-- **[OmniSight](https://github.com/HamzaKhanBUIC/OmniSight-Autonomous-Corporate-Strategy-Disruption-Radar)** [![GitHub Stars](https://img.shields.io/github/stars/HamzaKhanBUIC/OmniSight-Autonomous-Corporate-Strategy-Disruption-Radar?style=social&color=white)](https://github.com/HamzaKhanBUIC/OmniSight-Autonomous-Corporate-Strategy-Disruption-Radar/stargazers)  
-
-  **The autonomous competitive intelligence radar.** Synthesizes live web telemetry, audio transcripts, and knowledge graphs into dynamic strategy dashboards . **Pipeline**: concurrent web scraping (pricing pivots, hiring trends, customer sentiment), audio transcription with speaker diarization (earnings calls), graph memory synthesis via Cognee, and dual-layered radar comparisons. **Tech**: Python FastAPI, Google Gemini/Groq, Bright Data, Speechmatics. MIT licensed. Best for teams wanting automated, multi-modal competitive monitoring with a visual dashboard.
-
-
-
-- **[Intelwatch](https://github.com/ishandutta2007/intelwatch)** [![GitHub Stars](https://img.shields.io/github/stars/ishandutta2007/intelwatch?style=social&color=white)](https://github.com/ishandutta2007/intelwatch/stargazers)  
-
-  **The terminal-based due diligence toolkit.** Competitive intelligence, M&A due diligence, and OSINT directly from your command line . **Commands**: `profile` (financials, group structure, governance, OSINT, tech stack), `discover` (competitor discovery), `track` (competitor/keyword monitoring), `check`/`digest` (change detection), `ai-summary` (competitive briefs). **Privacy**: local-first, no intermediary servers, BYOK. MIT licensed; Pro tier ($49/mo) unlocks PDF/Excel exports and AI due diligence reports. Best for developers and analysts wanting fast, privacy-respecting intelligence without dashboards.
-
-
-
-- **[JingXi](https://github.com/geyuzi11/jingxi-competitive-intelligence)** [![GitHub Stars](https://img.shields.io/github/stars/geyuzi11/jingxi-competitive-intelligence?style=social&color=white)](https://github.com/geyuzi11/jingxi-competitive-intelligence/stargazers)  
-
-  **The structured competitive analysis tool.** Paste a competitor URL and get a traceable five-dimension report in ~60 seconds: Positioning & Monetization, Growth Archaeology, Channels & Reach, Next Moves, Evidence & Sources . **Features**: 8 parallel data sources, 16 signal scores, six-axis radar, growth timeline from Wayback snapshots, competitor comparison (up to 6), scheduled monitoring with weekly reports. **Caveat**: requires Node.js ≥18; real analysis needs local server. Best for product and strategy teams wanting repeatable, evidence-backed competitor profiles.
-
-
-
-- **[InfoEdge](https://github.com/gaoyu666/infoedge)** [![GitHub Stars](https://img.shields.io/github/stars/gaoyu666/infoedge?style=social&color=white)](https://github.com/gaoyu666/infoedge/stargazers)  
-
-  **The open-source intelligence workbench.** Trend discovery, data-source tracking, and opportunity scoring from public and authorized sources . **Features**: source dashboard, opportunity cards from news/communities/finance/supply chain signals, FastAPI pipeline with normalization and scoring, model settings for OpenAI-compatible providers. **Tech**: React/Vite frontend, Python FastAPI backend, Redis, PostgreSQL. Best for teams wanting a customizable workbench for opportunity research rather than a single-purpose competitor tracker.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **ai-dataset-radar** — Competitive intelligence specifically for AI training datasets, tracking 86 HF orgs, 50 GitHub orgs, 125 X accounts, with MCP server and REST API . Best for AI/ML teams monitoring dataset releases.
-
-- **intelwatch** (alternate repo) — Terminal-first OSINT with French corporate data (Pappers) and international fallback (Apollo, OpenCorporates) . Best for European market due diligence.
-
-- **Company Researcher (Exa)** — Company intelligence from a URL using Exa.ai search API with market intelligence endpoints . Best for quick company profiling with a free API tier.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- **Market intelligence SaaS is expensive and quote-only**: Bloomberg at ~$24K–$32K/seat/year; Crayon and Klue around $30K–$40K/year; CB Insights $40K–$100K; Similarweb enterprise $90K–$200K+ . None offer permanent free tiers; trials require sales engagement.
-
-- **Open-source tools are not drop-in replacements for enterprise platforms**: last30days-skill and Intelwatch cover OSINT and research synthesis, but lack the licensed content libraries (broker research, expert transcripts, private company financials) that AlphaSense and PitchBook provide.
-
-- **"Free" open-source tools still have costs**: API keys for X, YouTube, and LLM providers are required for full functionality; self-hosting requires infrastructure and maintenance.
-
-- **Data quality varies**: OSINT tools surface community sentiment and public signals, not verified financial data. Cross-reference with primary sources before making investment or strategic decisions.
-
-
+Market intelligence empowers organizations, corporate strategists, equity analysts, and founders to track competitor movements, monitor industry disruptions, analyze digital traffic, and synthesize high-conviction research from both proprietary networks and public web signals.
 
 ---
 
+## Sector Overview & Market Dynamics
 
+The global market intelligence and analytics software sector is estimated at **$8.6B – $12.1B in 2024**, projected to surpass **$19B – $21B by 2030** at a compound annual growth rate (**CAGR**) of **8.2% – 9.8%** (with AI-driven research engines accelerating further).
 
-**Made for analysts, competitive intelligence teams, and developers building market research workflows.**  
+The market exhibits a **hybrid, bi-modal structure**: it is **highly concentrated at the enterprise financial and institutional core** (where financial data behemoths like Bloomberg, FactSet, and AlphaSense command deep moats and pricing power), yet **fragmented across the competitive intelligence, digital telemetry, and specialized research layer**, where dozens of venture-backed SaaS platforms and agile open-source AI pipelines continuously compete for niche analytical workflows.
 
-Let's make market intelligence more open, evidence-backed, and accessible.
+---
+
+## Table of Contents
+
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Enterprise Platforms](#saas--hosted-enterprise-platforms)
+- [Open-Source Market Intelligence Tools](#open-source-market-intelligence-tools)
+- [Key Selection Criteria](#key-selection-criteria)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+---
+
+## SaaS & Hosted Enterprise Platforms
+
+The table below catalogs leading commercial market and competitive intelligence platforms, sorted in descending order by enterprise scale (company valuation or annual revenue).
+
+| Product | Enterprise Scale (Revenue / Valuation) | Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Bloomberg Terminal](https://www.bloomberg.com/professional/)** | **~$14.9B ARR** (Est. Enterprise Valuation: ~$60B+) | **$24,000 – $31,980/year per seat** (modular depending on firm size and regional contracts) | **No free tier**. 30-day institutional trial granted solely to qualified enterprise & buy-side prospects via account reps. | The global gold standard for real-time market data, broker research, multi-asset trading execution, and the IB institutional chat network. |
+| **[FactSet](https://www.factset.com/)** | **~$12B – $17B Market Cap** ($2.2B annual revenue) | **Starts at $4,000 – $5,000/year** (basic access); full analytical workstation averages **~$25,000/seat/year** | **No free tier**. Limited 7-day to 14-day evaluation trial accessible only upon direct corporate sales qualification. | Institutional financial data and portfolio intelligence platform featuring earnings call transcripts, consensus estimates, and financial modeling. |
+| **[AlphaSense](https://www.alpha-sense.com/)** | **$7.5B Valuation** ($600M+ ARR) | **Starts at $10,000 – $15,000/seat/year** (typical team deployments average ~$18,400 to $25,000/year) | **No permanent free tier**. 14-day business email trial with full semantic search across SEC filings and news (requires sales rep activation). | AI-powered market intelligence platform indexing broker equity research, expert call transcripts (Tegus), SEC filings, and corporate disclosures. |
+| **[PitchBook](https://pitchbook.com/)** | **~$2.57B Parent Revenue** (Morningstar segment ~$500M+ ARR) | **Starts at $20,000 – $25,000/year** (team license covering 1–3 seats; $7,500 – $10,500/seat add-on) | **No free tier**. Guided 3-day to 7-day institutional trial with sample download limits available following a product demonstration. | Definitive private market intelligence provider tracking venture capital, private equity, M&A valuations, debt rounds, and executive contact networks. |
+| **[Meltwater](https://www.meltwater.com/)** | **~$592M – $1B Valuation** (~$450M – $558M ARR) | **Starts at $10,000/year** (Starter tier; Pro tier starts at $25,000/year; median contract ~$25,800/year) | **No free tier**. Custom demonstration with temporary 7-day sandboxed sample query access provided for enterprise prospects. | Media monitoring, social listening, and executive brand intelligence platform tracking digital news outlets and consumer sentiment globally. |
+| **[Similarweb](https://www.similarweb.com/)** | **~$730M – $780M Market Cap** (~$280M ARR) | **Starts at $125/month** billed annually ($199/month billed month-to-month) for Starter Web Intelligence | **Permanently free tier available** (up to 3 website metrics results per report, 3 months historical data, basic traffic ranking, browser extension). Also offers a 7-day trial with 15 queries/day (credit card required). | Digital traffic intelligence platform analyzing website audience analytics, referral breakdown, competitor bounce rates, and organic keyword share. |
+| **[Klue](https://klue.com/)** | **$248M Valuation** (Series B; ~$38M – $88M estimated ARR) | **Starts at $15,000 – $20,000/year** (enterprise go-to-market deployments average $35,000 – $40,000/year) | **No free tier**. No self-serve trial; bespoke 14-day proof-of-concept available strictly after sales qualification and NDA execution. | Competitive enablement and win-loss intelligence suite that curates real-time competitor tracking into actionable battlecards for enterprise sales teams. |
+| **[CB Insights](https://www.cbinsights.com/)** | **~$70M – $100M ARR** (Est. Private Valuation: ~$500M+) | **Starts at $24,000 – $25,000/year** (median contract averages ~$47,000/year; enterprise tiers reach $100,000+) | **No permanent free tier**. 10-day trial with capped search results and restricted company profile views granted to qualified corporate domains. | Tech market intelligence platform offering predictive startup valuations, patent analytics, technology vendor scorecards, and customer feedback data. |
+| **[Crayon](https://www.crayon.co/)** | **~$10M – $15M ARR** (Series B funded) | **Starts at $12,000 – $15,000/year** (median mid-market contracts range ~$30,000/year) | **No free tier**. No public self-service signup; bespoke sales demo with sample competitor telemetry report provided on request. | Automated competitive intelligence workbench tracking website changes, pricing pivots, hiring trends, and competitive battlecard integrations. |
+
+---
+
+## Open-Source Market Intelligence Tools
+
+Open-source intelligence (OSINT) repositories and self-hosted research agents enable engineering teams and analysts to circumvent high-cost enterprise software contracts while customizing their data pipelines.
+
+The repositories below are ranked in descending order by **GitHub Star Count**.
+
+- **[OpenBB](https://github.com/OpenBB-finance/OpenBB)** [![GitHub Stars](https://img.shields.io/github/stars/OpenBB-finance/OpenBB?style=social&color=white)](https://github.com/OpenBB-finance/OpenBB/stargazers)  
+  *Open-source investment research platform and financial market data terminal.* Integrates macroeconomic databases, equity fundamentals, crypto telemetry, SEC filings, and proprietary LLM copilot agents into a modular Python API and CLI.
+- **[last30days-skill](https://github.com/mvanhorn/last30days-skill)** [![GitHub Stars](https://img.shields.io/github/stars/mvanhorn/last30days-skill?style=social&color=white)](https://github.com/mvanhorn/last30days-skill/stargazers)  
+  *Multi-source research synthesis agent for modern AI workflows.* Automatically ingests discussions, videos, and sentiment from Reddit, X, YouTube, Hacker News, Polymarket, and web searches from the last 30 days to produce evidence-backed market research with exact citations.
+- **[SpiderFoot](https://github.com/smicallef/spiderfoot)** [![GitHub Stars](https://img.shields.io/github/stars/smicallef/spiderfoot?style=social&color=white)](https://github.com/smicallef/spiderfoot/stargazers)  
+  *Automated open-source intelligence (OSINT) and external digital asset reconnaissance tool.* Queries 100+ public data sources to gather intelligence on corporate domains, IPs, DNS records, technologies, and corporate footprint disclosures.
+- **[ai-marketing-claude](https://github.com/zubair-trabzada/ai-marketing-claude)** [![GitHub Stars](https://img.shields.io/github/stars/zubair-trabzada/ai-marketing-claude?style=social&color=white)](https://github.com/zubair-trabzada/ai-marketing-claude/stargazers)  
+  *AI marketing and competitive research suite.* Orchestrates 15 specialized marketing subagents for competitor audits, ad campaign intelligence, brand positioning analysis, and PDF report generation.
+- **[startup-skill](https://github.com/ferdinandobons/startup-skill)** [![GitHub Stars](https://img.shields.io/github/stars/ferdinandobons/startup-skill?style=social&color=white)](https://github.com/ferdinandobons/startup-skill/stargazers)  
+  *Autonomous market validation and competitor discovery skill.* Evaluates business concepts, performs competitive intelligence sweeps, and extracts market positioning opportunities using AI agent reasoning.
+- **[unifapi-agent](https://github.com/unifapi-agent/agents)** [![GitHub Stars](https://img.shields.io/github/stars/unifapi-agent/agents?style=social&color=white)](https://github.com/unifapi-agent/agents/stargazers)  
+  *Multi-agent marketing and competitive intelligence engine.* Conducts competitor SEO audits, social listening, influencer pricing analysis, and visibility tracking across LLM responses using Model Context Protocol (MCP).
+- **[fintool](https://github.com/second-state/fintool)** [![GitHub Stars](https://img.shields.io/github/stars/second-state/fintool?style=social&color=white)](https://github.com/second-state/fintool/stargazers)  
+  *Rust CLI suite for financial intelligence and algorithmic market data analysis.* Aggregates quotes, news feeds, prediction market odds, and SEC filings across multiple exchange protocols and commodity feeds.
+- **[free-online-competitive-intelligence](https://github.com/SourcingDenis/free-online-competitive-intelligence)** [![GitHub Stars](https://img.shields.io/github/stars/SourcingDenis/free-online-competitive-intelligence?style=social&color=white)](https://github.com/SourcingDenis/free-online-competitive-intelligence/stargazers)  
+  *Curated collection of 40+ free competitive intelligence and investigation utilities.* Hand-picked tools for conducting corporate research, competitor background vetting, and domain forensics.
+- **[StartupKit](https://github.com/mohamedameen-io/StartupKit)** [![GitHub Stars](https://img.shields.io/github/stars/mohamedameen-io/StartupKit?style=social&color=white)](https://github.com/mohamedameen-io/StartupKit/stargazers)  
+  *Interactive ideation and market research framework.* Guides teams through competitive landscape mapping, market sizing calculations, target customer research, and pitch deck validation.
+- **[open-market-intelligence](https://github.com/lulu930128/open-market-intelligence)** [![GitHub Stars](https://img.shields.io/github/stars/lulu930128/open-market-intelligence?style=social&color=white)](https://github.com/lulu930128/open-market-intelligence/stargazers)  
+  *Local-first market intelligence workbench.* Built with FastAPI and Next.js for evidence-driven investment research, company financial extraction, and custom industry reports.
+- **[OmniSight](https://github.com/HamzaKhanBUIC/OmniSight-Autonomous-Corporate-Strategy-Disruption-Radar)** [![GitHub Stars](https://img.shields.io/github/stars/HamzaKhanBUIC/OmniSight-Autonomous-Corporate-Strategy-Disruption-Radar?style=social&color=white)](https://github.com/HamzaKhanBUIC/OmniSight-Autonomous-Corporate-Strategy-Disruption-Radar/stargazers)  
+  *Autonomous corporate strategy disruption radar.* Synthesizes live web telemetry, audio transcripts with speaker diarization (earnings calls), and graph memory into interactive strategy radars.
+- **[JingXi](https://github.com/geyuzi11/jingxi-competitive-intelligence)** [![GitHub Stars](https://img.shields.io/github/stars/geyuzi11/jingxi-competitive-intelligence?style=social&color=white)](https://github.com/geyuzi11/jingxi-competitive-intelligence/stargazers)  
+  *Structured competitive intelligence analyzer.* Extracts 16 signal scores across positioning, growth archaeology (Wayback machine diffs), traffic channels, and next moves within 60 seconds from any competitor URL.
+- **[InfoEdge](https://github.com/gaoyu666/infoedge)** [![GitHub Stars](https://img.shields.io/github/stars/gaoyu666/infoedge?style=social&color=white)](https://github.com/gaoyu666/infoedge/stargazers)  
+  *Open-source intelligence workbench for market trend discovery.* Monitors news, online communities, financial signals, and supply chains with FastAPI scoring pipelines and customizable UI cards.
+
+---
+
+## Key Selection Criteria
+
+When deciding between enterprise SaaS suites and self-hosted open-source intelligence pipelines:
+
+1. **Proprietary Data Moats**: Platforms like AlphaSense, Bloomberg, and PitchBook possess exclusive institutional rights to equity broker reports, expert transcript libraries (e.g. Tegus, Stream), and private equity capitalization tables.
+2. **Real-time Telemetry vs. Batch Scrapes**: Similarweb and Crayon supply near real-time clickstream telemetry and website change detection. Open-source pipelines require external API keys (SerpApi, Tavily, Exa, Bright Data) or headless scrapers.
+3. **Total Cost of Ownership (TCO)**: Enterprise CI platforms routinely cost $15,000 to $50,000+ per year on locked multi-year contracts. Open-source stacks run locally or on basic cloud instances, incurring costs only for raw LLM tokens and API calls.
+4. **Data Sovereignty & Local Privacy**: Regulated institutions, hedge funds, and M&A advisory teams frequently turn to self-hosted tools (like OpenBB, SpiderFoot, and local LLM pipelines) to avoid leaking search intent or deal targets to third-party vendor analytics.
+
+---
+
+## How to Contribute
+
+Contributions are warmly welcomed! To suggest a SaaS platform or an open-source tool:
+
+1. Fork this repository.
+2. Edit `README.md` keeping entries sorted according to their section guidelines (descending company scale for SaaS, descending GitHub stars with badge for Open-Source).
+3. Ensure all table columns (Pricing, Free Tier/Trial limits, Scale) provide factual, specific figures.
+4. Open a Pull Request detailing the tool's core utility and market relevance.
+
+---
+
+## Disclaimer
+
+This repository is curated for informational and educational purposes. Product pricing, trial limits, and corporate valuations fluctuate regularly based on vendor policies and market conditions. Verify current terms directly with vendor representatives before making procurement decisions.
