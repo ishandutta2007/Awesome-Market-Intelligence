@@ -57,7 +57,7 @@ The table below catalogs leading commercial market and competitive intelligence 
 
 Open-source intelligence (OSINT) repositories and self-hosted research agents enable engineering teams and analysts to circumvent high-cost enterprise software contracts while customizing their data pipelines. 🔓💻
 
-The repositories below are ranked in descending order by **GitHub Stars_Count**. ⭐
+The repositories below are ranked in descending order by **GitHub_Stars_Count**. ⭐
 
 - **[OpenBB](https://github.com/OpenBB-finance/OpenBB)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenBB-finance/OpenBB?style=social&color=white)](https://github.com/OpenBB-finance/OpenBB/stargazers)  
   *Open-source investment research platform and financial market data terminal.* Integrates macroeconomic databases, equity fundamentals, crypto telemetry, SEC filings, and proprietary LLM copilot agents into a modular Python API and CLI. 📊
