@@ -84,6 +84,12 @@ The repositories below are ranked in descending order by **GitHub_Stars_Count**.
 - **[JingXi](https://github.com/geyuzi11/jingxi-competitive-intelligence)** [![GitHub_Stars](https://img.shields.io/github/stars/geyuzi11/jingxi-competitive-intelligence?style=social&color=white)](https://github.com/geyuzi11/jingxi-competitive-intelligence/stargazers)  
   *Structured competitive intelligence analyzer.* Extracts 16 signal scores across positioning, growth archaeology (Wayback machine diffs), traffic channels, and next moves within 60 seconds from any competitor URL. ⚡
 - **[InfoEdge](https://github.com/gaoyu666/infoedge)** [![GitHub_Stars](https://img.shields.io/github/stars/gaoyu666/infoedge?style=social&color=white)](https://github.com/gaoyu666/infoedge/stargazers)  
+- **[Company Social Profile Finder](https://apify.com/publicrecords/company-social-profile-finder)** - Company domain or name to its LinkedIn, X, YouTube, Instagram and Facebook links, with confidence scores (Apify Actor, API + MCP).
+- **[Google Ads Transparency Scraper](https://apify.com/publicrecords/google-ads-transparency-scraper)** - Google ads a competitor runs, from the Ads Transparency Center, with first and last shown dates (Apify Actor, API + MCP).
+- **[Ashby Jobs Scraper](https://apify.com/publicrecords/ashby-jobs-scraper)** - New job postings from any Ashby job board since a date or window (24h, 7d, 30d) (Apify Actor, API + MCP).
+- **[Greenhouse Jobs Scraper](https://apify.com/publicrecords/greenhouse-jobs-scraper)** - New job postings from any Greenhouse job board since a date or window (Apify Actor, API + MCP).
+- **[Lever Jobs Scraper](https://apify.com/publicrecords/lever-jobs-scraper)** - New job postings from any Lever job board since a date or window (Apify Actor, API + MCP).
+- **[SmartRecruiters Jobs Scraper](https://apify.com/publicrecords/smartrecruiters-jobs-scraper)** - New job postings from any SmartRecruiters careers site since a date or window (Apify Actor, API + MCP).
   *Open-source intelligence workbench for market trend discovery.* Monitors news, online communities, financial signals, and supply chains with FastAPI scoring pipelines and customizable UI cards. 🧭
 
 ---
